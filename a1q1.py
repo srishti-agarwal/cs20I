@@ -111,3 +111,4 @@ mean = tf.reduce_mean(z)
 out = tf.cond(tf.less(mean,0.0), lambda : tf.losses.mean_squared_error(x,y), lambda: tf.losses.absolute_difference(x,y))
 print(sess.run([mean,out]))
 # YOUR CODE
+
